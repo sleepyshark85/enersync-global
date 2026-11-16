@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | EnerSync Global</title>
+<meta name="description" content="The 11 EnerSync products — Core, Execute, Pulse, Design, Stock, Supply, Quality, Insight, Sustain, Energy, and Connect — organized by deployment phase.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand-mark">
+      <img src="images/logo-mark.png" alt="EnerSync Global logo">
+      <span class="brand-word"><strong>EnerSync</strong> Global</span>
+    </a>
+    <nav class="main-nav">
+      <a href="products.html">Products</a>
+      <a href="it-trading.html" class="nav-featured">IT Trading <span class="nav-featured-tag">Core Strength</span></a>
+      <a href="solutions.html">Solutions</a>
+      <div class="nav-item-dropdown">
+        <a href="#">More Divisions &#9662;</a>
+        <div class="nav-dropdown-panel">
+          <a href="telecom.html">Telecom</a>
+          <a href="automation.html">Automation</a>
+          <a href="platforms.html">Platforms</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html">Request a Quote</a>
+    </nav>
+    <div class="header-actions">
+      <a href="quote.html" class="btn btn-fill btn-sm">Request a Quote</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-intro">
+    <div class="wrap">
+      <div class="crumb-trail"><a href="index.html">Home</a><span>/</span><span>Products</span></div>
+      <h1>The EnerSync Product Suite</h1>
+      <p>Eleven products, each mapped to one of the five deployment phases. Browse by phase to see what goes live, when, and why.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+
+      <div class="phase-tabs" role="tablist" aria-label="Filter products by deployment phase">
+        <button class="phase-tab is-active" data-phase-target="phase-1">Phase 1 · Protect &amp; See</button>
+        <button class="phase-tab" data-phase-target="phase-2">Phase 2 · Run</button>
+        <button class="phase-tab" data-phase-target="phase-3">Phase 3 · Measure</button>
+        <button class="phase-tab" data-phase-target="phase-4">Phase 4 · Optimize</button>
+        <button class="phase-tab" data-phase-target="phase-5">Phase 5 · Scale</button>
+      </div>
+
+      <!-- PHASE 1 -->
+      <div id="phase-1" class="phase-panel is-active">
+        <div class="phase-panel-head">
+          <p class="eyebrow">Before the first production run</p>
+          <h2>Phase 1 — Protect &amp; See</h2>
+          <p>Network segmentation and real-time floor visibility, live before machines produce their first unit.</p>
+        </div>
+        <div class="matrix-scroll">
+          <table class="product-matrix">
+            <thead>
+              <tr><th>Product</th><th>Category</th><th>Function</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="prod-name">EnerSync Pulse</td>
+                <td><span class="prod-tag">SCADA / IIoT</span></td>
+                <td>Connects to every machine via OPC-UA and begins real-time collection of machine state, alarms, sensor readings, cycle counters, and energy draw, buffered locally on edge servers and stored in a time-series data lake for use by MES, BI, and predictive maintenance in later phases.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div id="phase-2" class="phase-panel">
+        <div class="phase-panel-head">
+          <p class="eyebrow">Business under control</p>
+          <h2>Phase 2 — Run</h2>
+          <p>ERP and MES go live together, eliminating manual parameter entry and giving management real-time visibility into orders, schedules, and production.</p>
+        </div>
+        <div class="matrix-scroll">
+          <table class="product-matrix">
+            <thead>
+              <tr><th>Product</th><th>Category</th><th>Function</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="prod-name">EnerSync Core</td>
+                <td><span class="prod-tag">ERP</span></td>
+                <td>Order management, production scheduling, inventory monitoring, cost accounting for every batch, supplier purchase orders, and regrind genealogy tracking from Day 1.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Execute</td>
+                <td><span class="prod-tag">MES</span></td>
+                <td>Translates production schedules into machine-level action: work order dispatch, automated recipe push to machine controllers, cycle tracking, OEE, downtime capture, and actuals reporting back to ERP.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div id="phase-3" class="phase-panel">
+        <div class="phase-panel-head">
+          <p class="eyebrow">Quality credentials, visibility, efficiency</p>
+          <h2>Phase 3 — Measure</h2>
+          <p>Quality, energy, warehouse, and dashboard products bring certification readiness and management-level visibility to the operation.</p>
+        </div>
+        <div class="matrix-scroll">
+          <table class="product-matrix">
+            <thead>
+              <tr><th>Product</th><th>Category</th><th>Function</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="prod-name">EnerSync Quality</td>
+                <td><span class="prod-tag">QMS</span></td>
+                <td>ISO 9001:2015 documentation, non-conformance recording, CAPA, supplier quality tracking, and internal audit scheduling. Automatically opens NCRs from Execute when a production cycle deviates from limits.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Energy</td>
+                <td><span class="prod-tag">EMS</span></td>
+                <td>Machine-level and circuit-level sub-metering at 15-minute intervals, identifying waste by machine, circuit, and time of day. Supports ISO 50001 reporting.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Stock</td>
+                <td><span class="prod-tag">WMS</span></td>
+                <td>Records every material delivery, every issue to production, and every regrind batch returned from the crusher with full source traceability, completing the regrind genealogy chain.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Insight</td>
+                <td><span class="prod-tag">BI</span></td>
+                <td>Consolidates data from every EnerSync product into near-real-time management dashboards: OEE by machine, first-pass yield, scrap rate, energy cost per kilogram, on-time delivery, and cost per unit.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PHASE 4 -->
+      <div id="phase-4" class="phase-panel">
+        <div class="phase-panel-head">
+          <p class="eyebrow">Machine intelligence and automated quality</p>
+          <h2>Phase 4 — Optimize</h2>
+          <p>Predictive maintenance, AI inspection, digital twin, and version-controlled design become active on the sensor baseline built since Phase 1.</p>
+        </div>
+        <div class="matrix-scroll">
+          <table class="product-matrix">
+            <thead>
+              <tr><th>Product</th><th>Category</th><th>Function</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="prod-name">EnerSync Pulse<br><span class="prod-tag">(AI extensions)</span></td>
+                <td><span class="prod-tag">SCADA / IIoT</span></td>
+                <td>Predictive maintenance models activate on 6–12 months of accumulated sensor history, learning normal operating signatures and detecting early wear signatures before failure. Also supports digital twin simulation of process parameters.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Design</td>
+                <td><span class="prod-tag">PLM</span></td>
+                <td>The single authoritative, version-controlled repository for mold drawings and process parameter profiles, linked to the machine recipes they apply to. Approved design changes flow automatically to Execute.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PHASE 5 -->
+      <div id="phase-5" class="phase-panel">
+        <div class="phase-panel-head">
+          <p class="eyebrow">Multi-market commercial and sustainability infrastructure</p>
+          <h2>Phase 5 — Scale</h2>
+          <p>Procurement automation, structured commercial management, and sustainability reporting support growth across multiple markets and customers.</p>
+        </div>
+        <div class="matrix-scroll">
+          <table class="product-matrix">
+            <thead>
+              <tr><th>Product</th><th>Category</th><th>Function</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="prod-name">EnerSync Supply</td>
+                <td><span class="prod-tag">SCM</span></td>
+                <td>Reads inventory levels from Stock, applies production forecasts from Core, and triggers purchase orders automatically as inventory approaches reorder thresholds. Includes supplier scorecards.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Connect</td>
+                <td><span class="prod-tag">CRM</span></td>
+                <td>Structures the commercial side of the business: customer accounts, quotation tracking, order history, and sales pipeline visibility across markets, specifications, and credit terms.</td>
+              </tr>
+              <tr>
+                <td class="prod-name">EnerSync Sustain</td>
+                <td><span class="prod-tag">ESG</span></td>
+                <td>Draws energy data from Energy, material consumption from Core, waste records from Stock, and transportation data from Supply to produce Scope 1, 2, and 3 carbon footprint reports and recycled-content traceability documentation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="full-matrix-note">Each EnerSync product is a one-time purchase — perpetual license, implementation, configuration, and go-live support included, with annual maintenance and support available from Year 2. Pricing is tailored to your production scale and phase scope. <a href="quote.html">Request a formal quotation</a> for exact figures.</p>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="wrap">
+      <h2>Not sure which products your factory needs first?</h2>
+      <p>EnerSync scopes every deployment against your production environment, your certification requirements, and your growth plan.</p>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-fill btn-lg">Talk to EnerSync</a>
+        <a href="solutions.html" class="btn btn-ghost btn-lg">See the Phased Approach</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="images/logo-mark.png" alt="EnerSync Global logo"><span class="brand-word"><strong>EnerSync</strong> Global</span></div>
+        <p>EnerSync Global designs and delivers the industrial IT product suite that makes manufacturing operations visible, certifiable, and commercially competitive.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="products.html">EnerSync Core — ERP</a></li>
+          <li><a href="products.html">EnerSync Execute — MES</a></li>
+          <li><a href="products.html">EnerSync Pulse — SCADA/IIoT</a></li>
+          <li><a href="products.html">View All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Divisions</h5>
+        <ul>
+          <li><a href="it-trading.html">IT Trading</a></li>
+          <li><a href="telecom.html">Telecom</a></li>
+          <li><a href="automation.html">Automation</a></li>
+          <li><a href="platforms.html">Platforms</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About EnerSync</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="case-study.html">Case Study</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li class="footer-address">152 Beach Road, #23-02, Gateway East, Singapore 189721</li>
+          <li><a href="mailto:"></a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; 2026 ENERSYNC GLOBAL PTE. LTD. All rights reserved.</p>
+      <p>152 Beach Road, #23-02, Gateway East, Singapore 189721</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
