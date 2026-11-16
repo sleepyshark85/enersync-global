@@ -4,33 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Request a Quote | EnerSync Global</title>
-<meta name="description" content="Request a tailored EnerSync Global quotation based on your production scale, phase scope, and deployment configuration.">
+<meta name="description" content="Request a quotation from EnerSync Global for solar, wind, BESS and smart grid equipment, and for the EnerSync energy software suite.">
 <link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
+  <div class="topbar">
+    <div class="wrap topbar-row">
+      <span>Renewable energy equipment &amp; grid software</span>
+      <span>152 Beach Road, #23-02, Gateway East, Singapore 189721</span>
+    </div>
+  </div>
   <div class="wrap header-row">
     <a href="index.html" class="brand-mark">
       <img src="images/logo-mark.png" alt="EnerSync Global logo">
       <span class="brand-word"><strong>EnerSync</strong> Global</span>
     </a>
     <nav class="main-nav">
-      <a href="products.html">Products</a>
-      <a href="it-trading.html" class="nav-featured">IT Trading <span class="nav-featured-tag">Core Strength</span></a>
+      <a href="trading.html" class="nav-featured">Energy Trading <span class="nav-featured-tag">Core Strength</span></a>
+      <a href="products.html">Software</a>
       <a href="solutions.html">Solutions</a>
-      <div class="nav-item-dropdown">
-        <a href="#">More Divisions &#9662;</a>
-        <div class="nav-dropdown-panel">
-          <a href="telecom.html">Telecom</a>
-          <a href="automation.html">Automation</a>
-          <a href="platforms.html">Platforms</a>
-        </div>
-      </div>
+      <a href="case-study.html">Reference Design</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="quote.html">Request a Quote</a>
     </nav>
     <div class="header-actions">
       <a href="quote.html" class="btn btn-fill btn-sm">Request a Quote</a>
@@ -47,7 +48,7 @@
     <div class="wrap">
       <div class="crumb-trail"><a href="index.html">Home</a><span>/</span><span>Request a Quote</span></div>
       <h1>Request a Quotation</h1>
-      <p>EnerSync pricing depends on your production scale, the phase scope you choose, and your deployment configuration. Tell us about your factory and we'll follow up with a tailored quotation after a short scoping conversation.</p>
+      <p>Pricing depends on the equipment, quantities, software scope and project location. Tell us about your project and we'll follow up with a tailored quotation.</p>
     </div>
   </section>
 
@@ -83,34 +84,54 @@
               </div>
             </div>
             <div class="field-row">
-              <div class="field full">
-                <label for="scale">Factory / Production Scale or Use Case *</label>
-                <input type="text" id="scale" name="scale" required placeholder="e.g. 8 machines, 3 shifts, 1,300 units/day">
-                <span class="field-msg">Please describe your production scale or use case.</span>
+              <div class="field">
+                <label for="project-type">Project Type *</label>
+                <input type="text" id="project-type" name="project_type" required placeholder="e.g. Utility solar + BESS, C&amp;I rooftop, wind farm">
+                <span class="field-msg">Please describe the project type.</span>
+              </div>
+              <div class="field">
+                <label for="capacity">Capacity (MW / MWh)</label>
+                <input type="text" id="capacity" name="capacity" placeholder="e.g. 50 MWp PV, 20 MWh storage">
+                <span class="field-msg">Please enter the project capacity.</span>
               </div>
             </div>
             <div class="field-row">
               <div class="field full">
-                <label>Products of Interest</label>
+                <label for="location">Project Location</label>
+                <input type="text" id="location" name="location" placeholder="Country / region">
+                <span class="field-msg">Please enter the project location.</span>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field full">
+                <label>Equipment of Interest</label>
                 <div class="checkbox-grid">
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Core"> EnerSync Core — ERP</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Execute"> EnerSync Execute — MES</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Pulse"> EnerSync Pulse — SCADA/IIoT</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Quality"> EnerSync Quality — QMS</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Energy"> EnerSync Energy — EMS</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Stock"> EnerSync Stock — WMS</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Insight"> EnerSync Insight — BI</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Design"> EnerSync Design — PLM</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Supply"> EnerSync Supply — SCM</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Connect"> EnerSync Connect — CRM</label>
-                  <label class="checkbox-item"><input type="checkbox" name="products" value="EnerSync Sustain"> EnerSync Sustain — ESG</label>
+                  <label class="checkbox-item"><input type="checkbox" name="equipment" value="Solar Energy"> Solar Energy — panels, inverters, trackers, BOS</label>
+                  <label class="checkbox-item"><input type="checkbox" name="equipment" value="Wind Energy"> Wind Energy — turbines, blades, generators, gearboxes</label>
+                  <label class="checkbox-item"><input type="checkbox" name="equipment" value="BESS"> Battery Energy Storage Systems (BESS)</label>
+                  <label class="checkbox-item"><input type="checkbox" name="equipment" value="Power Distribution &amp; Smart Grid"> Power Distribution &amp; Smart Grid</label>
+                </div>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field full">
+                <label>Software of Interest</label>
+                <div class="checkbox-grid">
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync GridView"> EnerSync GridView — SCADA</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Shield"> EnerSync Shield — OT Security</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Store"> EnerSync Store — BESS EMS</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Meter"> EnerSync Meter — AMI/MDM</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Forecast"> EnerSync Forecast — Generation Forecasting</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Assets"> EnerSync Assets — APM/CMMS</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Flex"> EnerSync Flex — DERMS/VPP</label>
+                  <label class="checkbox-item"><input type="checkbox" name="software" value="EnerSync Carbon"> EnerSync Carbon — ESG/REC</label>
                 </div>
               </div>
             </div>
             <div class="field-row">
               <div class="field full">
                 <label for="message">Message / Notes</label>
-                <textarea id="message" name="message" placeholder="Anything else we should know — timeline, certification requirements, existing systems to integrate with, etc."></textarea>
+                <textarea id="message" name="message" placeholder="Anything else we should know: timeline, quantities, preferred brands, grid connection requirements, existing systems, etc."></textarea>
                 <span class="field-msg">Please enter a message.</span>
               </div>
             </div>
@@ -126,14 +147,14 @@
               <div class="info-row-mark">1</div>
               <div>
                 <strong>Scoping conversation</strong>
-                <span>We review your production scale, phase priorities, and deployment configuration.</span>
+                <span>We review your project type, capacity, location and timeline.</span>
               </div>
             </div>
             <div class="info-row">
               <div class="info-row-mark">2</div>
               <div>
                 <strong>Tailored quotation</strong>
-                <span>You receive a formal quotation matched to the products and phases relevant to your factory.</span>
+                <span>You receive a formal quotation for the equipment and software your project needs.</span>
               </div>
             </div>
           </div>
@@ -141,7 +162,7 @@
           <div class="call-panel">
             <h3>Prefer to Talk First?</h3>
             <p>Email us to schedule a scoping call before submitting a formal request.</p>
-            <a href="mailto:?subject=Quotation%20Request%20-%20EnerSync%20System" class="btn btn-fill">Email to Discuss Pricing</a>
+            <a href="mailto:?subject=Quotation%20Request%20-%20EnerSync%20Global" class="btn btn-fill">Email to Discuss Pricing</a>
           </div>
         </div>
 
@@ -156,24 +177,24 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo"><img src="images/logo-mark.png" alt="EnerSync Global logo"><span class="brand-word"><strong>EnerSync</strong> Global</span></div>
-        <p>EnerSync Global designs and delivers the industrial IT product suite that makes manufacturing operations visible, certifiable, and commercially competitive.</p>
+        <p>EnerSync Global supplies solar, wind, storage, and grid equipment and the enterprise software that monitors, dispatches, and optimizes it.</p>
       </div>
       <div class="footer-col">
-        <h5>Products</h5>
+        <h5>Energy Trading</h5>
         <ul>
-          <li><a href="products.html">EnerSync Core — ERP</a></li>
-          <li><a href="products.html">EnerSync Execute — MES</a></li>
-          <li><a href="products.html">EnerSync Pulse — SCADA/IIoT</a></li>
-          <li><a href="products.html">View All Products</a></li>
+          <li><a href="trading.html#solar">Solar Energy</a></li>
+          <li><a href="trading.html#wind">Wind Energy</a></li>
+          <li><a href="trading.html#bess">Battery Storage (BESS)</a></li>
+          <li><a href="trading.html#grid">Power Distribution &amp; Smart Grid</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Divisions</h5>
+        <h5>Software</h5>
         <ul>
-          <li><a href="it-trading.html">IT Trading</a></li>
-          <li><a href="telecom.html">Telecom</a></li>
-          <li><a href="automation.html">Automation</a></li>
-          <li><a href="platforms.html">Platforms</a></li>
+          <li><a href="products.html">EnerSync GridView — SCADA</a></li>
+          <li><a href="products.html">EnerSync Store — BESS EMS</a></li>
+          <li><a href="products.html">EnerSync Forecast</a></li>
+          <li><a href="products.html">View All Software</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -181,7 +202,8 @@
         <ul>
           <li><a href="about.html">About EnerSync</a></li>
           <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="case-study.html">Case Study</a></li>
+          <li><a href="case-study.html">Reference Design</a></li>
+          <li><a href="quote.html">Request a Quote</a></li>
         </ul>
       </div>
       <div class="footer-col">

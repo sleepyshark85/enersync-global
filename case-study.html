@@ -3,34 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Floating Solar Buoy Manufacturing Facility | EnerSync Global</title>
-<meta name="description" content="How EnerSync deployed a full IT product suite across five phases for an industrial floating-solar component manufacturer producing 1,300 floating solar buoys per day.">
+<title>Reference Architecture: 50 MWp Solar + 20 MWh BESS Hybrid Plant | EnerSync Global</title>
+<meta name="description" content="An illustrative reference design showing how EnerSync equipment and software fit together in a 50 MWp solar plus 20 MWh battery storage hybrid plant.">
 <link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
+  <div class="topbar">
+    <div class="wrap topbar-row">
+      <span>Renewable energy equipment &amp; grid software</span>
+      <span>152 Beach Road, #23-02, Gateway East, Singapore 189721</span>
+    </div>
+  </div>
   <div class="wrap header-row">
     <a href="index.html" class="brand-mark">
       <img src="images/logo-mark.png" alt="EnerSync Global logo">
       <span class="brand-word"><strong>EnerSync</strong> Global</span>
     </a>
     <nav class="main-nav">
-      <a href="products.html">Products</a>
-      <a href="it-trading.html" class="nav-featured">IT Trading <span class="nav-featured-tag">Core Strength</span></a>
+      <a href="trading.html" class="nav-featured">Energy Trading <span class="nav-featured-tag">Core Strength</span></a>
+      <a href="products.html">Software</a>
       <a href="solutions.html">Solutions</a>
-      <div class="nav-item-dropdown">
-        <a href="#">More Divisions &#9662;</a>
-        <div class="nav-dropdown-panel">
-          <a href="telecom.html">Telecom</a>
-          <a href="automation.html">Automation</a>
-          <a href="platforms.html">Platforms</a>
-        </div>
-      </div>
+      <a href="case-study.html">Reference Design</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="quote.html">Request a Quote</a>
     </nav>
     <div class="header-actions">
       <a href="quote.html" class="btn btn-fill btn-sm">Request a Quote</a>
@@ -45,33 +46,36 @@
 
   <section class="page-intro">
     <div class="wrap">
-      <div class="crumb-trail"><a href="index.html">Home</a><span>/</span><span>Case Study</span></div>
-      <h1>Floating Solar Buoy Manufacturing Facility</h1>
-      <p>A large-scale floating solar buoy manufacturing facility producing 1,300 HDPE floating solar buoys per day required IT infrastructure that was load-bearing from Day 1 — not a back-office addition.</p>
+      <div class="crumb-trail"><a href="index.html">Home</a><span>/</span><span>Reference Architecture</span></div>
+      <h1>Reference Architecture: 50 MWp Solar + 20 MWh BESS Hybrid Plant</h1>
+      <p>An example design showing how EnerSync equipment and software fit together in a typical solar-plus-storage plant.</p>
     </div>
   </section>
 
   <section class="block">
     <div class="wrap">
-      <div class="head-block">
-        <p class="eyebrow">Context</p>
-        <h2>Why IT was a load-bearing requirement</h2>
+      <div class="callout-block" style="max-width:820px; margin:0 auto 40px;">
+        <h4>This is an illustrative design, not a client project</h4>
+        <p>The plant size, equipment and phasing below are a typical example to show how the pieces connect. Every real project is scoped to its own site, grid code and offtake agreement.</p>
       </div>
-      <p style="max-width:820px; margin-bottom:20px;">This industrial floating-solar component manufacturer built a factory to produce 1,300 floating solar buoys every day, running 8 production machines across 3 continuous shifts, 24 hours a day. At this scale, the gap between what was planned and what the floor actually produced could not wait until month-end to be discovered. Machine parameters could not be typed by hand at every shift change — with 8 machines across 3 shifts, that is 24 manual parameter entries per day, each an opportunity to introduce a deviation that could produce hundreds of structurally compromised buoys before it surfaced at inspection.</p>
-      <p style="max-width:820px; margin-bottom:20px;">Beyond internal operations, the commercial stakes were direct. Major industrial buyers — solar EPC contractors and energy companies — will not qualify a supplier without ISO 9001:2015 certification, and solar developers with public net-zero commitments require verified recycled-content and carbon footprint data from their supply chains. A factory that cannot provide either is disqualified before its product is ever evaluated.</p>
+      <div class="head-block">
+        <p class="eyebrow">The Example Plant</p>
+        <h2>What the design assumes</h2>
+      </div>
+      <p style="max-width:820px; margin-bottom:20px;">A ground-mounted 50 MWp PV plant on single-axis trackers, with a 20 MWh battery storage system at the same site. Both connect to the grid through an on-site substation. The battery is designed to store midday solar output, smooth ramp rates and shift energy into evening peak hours.</p>
 
       <div class="figure-grid" style="margin-top:40px;">
         <div class="figure-card">
-          <strong>1,300</strong>
-          <span>buoys targeted per day</span>
+          <strong>50 MWp</strong>
+          <span>PV capacity on single-axis trackers</span>
         </div>
         <div class="figure-card">
-          <strong>8 / 3</strong>
-          <span>machines / continuous shifts</span>
+          <strong>20 MWh</strong>
+          <span>containerised battery storage</span>
         </div>
         <div class="figure-card">
-          <strong>~34M</strong>
-          <span>sensor readings collected per day across all machines</span>
+          <strong>5</strong>
+          <span>deployment phases</span>
         </div>
       </div>
     </div>
@@ -81,91 +85,51 @@
     <div class="wrap">
       <div class="head-block centered">
         <p class="eyebrow">Rollout</p>
-        <h2>Five-phase IT deployment summary</h2>
-        <p>The EnerSync product suite was deployed in five sequential phases aligned to the factory's own commissioning timeline.</p>
+        <h2>Equipment and software by phase</h2>
+        <p>Each phase lists the traded equipment and the EnerSync software products it would typically involve.</p>
       </div>
       <ol class="phase-timeline">
         <li class="phase-track-item">
           <div class="phase-track-num">1</div>
-          <p class="phase-track-tag">Protect &amp; See</p>
-          <h3>Network segmentation and floor visibility</h3>
-          <p>The factory floor network was isolated from corporate IT before any machine was connected. EnerSync Pulse began collecting real-time data from all 8 machines via OPC-UA — approximately 50 sensor points per machine, roughly 34 million readings per day — buffered on ruggedized edge servers capable of 4–8 hours of autonomous operation.</p>
+          <p class="phase-track-tag">Connect &amp; See</p>
+          <h3>Plant monitoring and a secure control network</h3>
+          <p><strong>Equipment:</strong> PV modules, inverters, trackers, DC cabling and MC4 connectors, transformers, MV switchgear, plant SCADA hardware.<br><strong>Software:</strong> EnerSync GridView collects data from inverters, trackers, meters and protection relays. EnerSync Shield separates the plant control network from corporate IT and monitors it from before energisation.</p>
         </li>
         <li class="phase-track-item">
           <div class="phase-track-num">2</div>
-          <p class="phase-track-tag">Run</p>
-          <h3>ERP and MES go live</h3>
-          <p>EnerSync Core began managing orders, scheduling, inventory across both HDPE silos, and the regrind genealogy loop. EnerSync Execute took over recipe push to machine controllers, eliminating the 24 manual parameter entries per day the factory would otherwise have required.</p>
+          <p class="phase-track-tag">Store &amp; Dispatch</p>
+          <h3>Battery storage and revenue metering</h3>
+          <p><strong>Equipment:</strong> battery containers, power conversion systems (PCS), battery management systems (BMS), smart meters.<br><strong>Software:</strong> EnerSync Store schedules charging and discharging and manages state of charge. EnerSync Meter collects revenue-grade meter data for settlement.</p>
         </li>
         <li class="phase-track-item">
           <div class="phase-track-num">3</div>
-          <p class="phase-track-tag">Measure</p>
-          <h3>Quality, energy, warehouse, and dashboards</h3>
-          <p>EnerSync Quality began ISO 9001:2015 documentation and automatic non-conformance capture. EnerSync Energy sub-metered every major circuit, targeting an 8–15% reduction in the factory's annual electricity spend. EnerSync Stock closed the regrind traceability loop, and EnerSync Insight consolidated the first cross-product management dashboards.</p>
+          <p class="phase-track-tag">Predict &amp; Maintain</p>
+          <h3>Forecasting and asset performance</h3>
+          <p><strong>Equipment:</strong> weather stations and irradiance sensors.<br><strong>Software:</strong> EnerSync Forecast produces day-ahead and intraday generation forecasts. EnerSync Assets tracks inverter, tracker and battery health and schedules maintenance work orders.</p>
         </li>
         <li class="phase-track-item">
           <div class="phase-track-num">4</div>
-          <p class="phase-track-tag">Optimize</p>
-          <h3>Predictive maintenance and automated inspection</h3>
-          <p>With 6–12 months of sensor baseline accumulated, predictive maintenance models began detecting early wear signatures on the factory's highest-value machines. AI visual inspection was deployed at trimming line exits, and EnerSync Design became the version-controlled repository for mold designs and process parameter profiles.</p>
+          <p class="phase-track-tag">Orchestrate</p>
+          <h3>Coordinated dispatch across solar and storage</h3>
+          <p><strong>Equipment:</strong> microgrid controller at the point of connection.<br><strong>Software:</strong> EnerSync Flex coordinates PV and battery output against grid limits and market or tariff signals, and can enrol the plant in a virtual power plant (VPP) programme.</p>
         </li>
         <li class="phase-track-item">
           <div class="phase-track-num">5</div>
-          <p class="phase-track-tag">Scale</p>
-          <h3>Commercial and sustainability infrastructure</h3>
-          <p>EnerSync Supply automated procurement as the factory added product variants. EnerSync Connect structured commercial relationships across markets. EnerSync Sustain produced Scope 1, 2, and 3 carbon reports and recycled-content documentation required by solar developers with net-zero commitments.</p>
+          <p class="phase-track-tag">Report &amp; Scale</p>
+          <h3>Sustainability reporting and portfolio growth</h3>
+          <p><strong>Software:</strong> EnerSync Carbon turns metered generation into emissions-avoided reports and supports renewable energy certificate (REC) tracking. Further sites can be added to the same GridView and Flex setup.</p>
         </li>
       </ol>
     </div>
   </section>
 
-  <section class="block">
-    <div class="wrap">
-      <div class="head-block centered">
-        <p class="eyebrow">Investment</p>
-        <h2>Rollout scope and business value</h2>
-        <p>The engagement covered the full 11-product EnerSync suite plus supporting deployment infrastructure, delivered across the five phases described above.</p>
-      </div>
-
-      <p style="max-width:820px; margin:0 auto 20px;">The one-time investment covered the EnerSync product suite (perpetual license, implementation, configuration, and go-live support for all 11 products) together with the deployment infrastructure required to support it — network segmentation, edge servers, HMIs, sensors, and cloud connectivity. From Year 2, an ongoing maintenance and support arrangement plus cloud infrastructure costs keep the stack current and supported.</p>
-      <p style="max-width:820px; margin:0 auto;">Because scope, machine count, and phase selection vary by factory, EnerSync does not publish fixed figures for this engagement. <a href="quote.html">Request a quotation</a> for a breakdown scoped to a comparable production environment.</p>
-    </div>
-  </section>
-
-  <section class="block block-alt">
-    <div class="wrap">
-      <div class="head-block centered">
-        <p class="eyebrow">Business Case</p>
-        <h2>Return drivers</h2>
-      </div>
-      <div class="tile-row-2">
-        <div class="callout-block">
-          <h4>Energy savings</h4>
-          <p>An 8–15% reduction in annual electricity spend translates directly into recurring savings. EnerSync Energy is designed to recover its own purchase cost from these savings within roughly 18 months.</p>
-        </div>
-        <div class="callout-block">
-          <h4>Unplanned downtime avoidance</h4>
-          <p>Each large-format blow molding machine represents roughly a third of large-buoy capacity, and a single unplanned failure carries a significant cost in lost production. Preventing just one failure per machine per year recovers the entire Phase 4 investment.</p>
-        </div>
-        <div class="callout-block">
-          <h4>ISO 9001 certification</h4>
-          <p>Required by major industrial buyers before supplier evaluation. EnerSync Quality is the lowest-cost, highest-leverage product in the suite — the first large contract it enables recovers its cost many times over.</p>
-        </div>
-        <div class="callout-block">
-          <h4>Sustainability credentials</h4>
-          <p>Solar developers require verified carbon and recycled-content data. A single contract requiring this documentation recovers the EnerSync Sustain investment in its entirety.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="cta-banner">
     <div class="wrap">
-      <h2>Building a factory that needs to run this way from Day 1?</h2>
-      <p>EnerSync scopes IT architecture against your production line, your buyers' certification requirements, and your growth plan.</p>
+      <h2>Planning a solar, wind or storage project?</h2>
+      <p>Tell us your site, capacity and timeline, and we'll scope the equipment and software it needs.</p>
       <div class="cta-banner-actions">
         <a href="quote.html" class="btn btn-fill btn-lg">Request a Quotation</a>
-        <a href="products.html" class="btn btn-ghost btn-lg">See the Product Suite</a>
+        <a href="products.html" class="btn btn-ghost btn-lg">See the Software Suite</a>
       </div>
     </div>
   </section>
@@ -177,24 +141,24 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo"><img src="images/logo-mark.png" alt="EnerSync Global logo"><span class="brand-word"><strong>EnerSync</strong> Global</span></div>
-        <p>EnerSync Global designs and delivers the industrial IT product suite that makes manufacturing operations visible, certifiable, and commercially competitive.</p>
+        <p>EnerSync Global supplies solar, wind, storage, and grid equipment and the enterprise software that monitors, dispatches, and optimizes it.</p>
       </div>
       <div class="footer-col">
-        <h5>Products</h5>
+        <h5>Energy Trading</h5>
         <ul>
-          <li><a href="products.html">EnerSync Core — ERP</a></li>
-          <li><a href="products.html">EnerSync Execute — MES</a></li>
-          <li><a href="products.html">EnerSync Pulse — SCADA/IIoT</a></li>
-          <li><a href="products.html">View All Products</a></li>
+          <li><a href="trading.html#solar">Solar Energy</a></li>
+          <li><a href="trading.html#wind">Wind Energy</a></li>
+          <li><a href="trading.html#bess">Battery Storage (BESS)</a></li>
+          <li><a href="trading.html#grid">Power Distribution &amp; Smart Grid</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Divisions</h5>
+        <h5>Software</h5>
         <ul>
-          <li><a href="it-trading.html">IT Trading</a></li>
-          <li><a href="telecom.html">Telecom</a></li>
-          <li><a href="automation.html">Automation</a></li>
-          <li><a href="platforms.html">Platforms</a></li>
+          <li><a href="products.html">EnerSync GridView — SCADA</a></li>
+          <li><a href="products.html">EnerSync Store — BESS EMS</a></li>
+          <li><a href="products.html">EnerSync Forecast</a></li>
+          <li><a href="products.html">View All Software</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -202,7 +166,8 @@
         <ul>
           <li><a href="about.html">About EnerSync</a></li>
           <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="case-study.html">Case Study</a></li>
+          <li><a href="case-study.html">Reference Design</a></li>
+          <li><a href="quote.html">Request a Quote</a></li>
         </ul>
       </div>
       <div class="footer-col">
